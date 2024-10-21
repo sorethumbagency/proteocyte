@@ -6,9 +6,7 @@
     positions.forEach(position => {
       const h3 = document.createElement('h3');
       h3.innerHTML = position.innerHTML;
-      h3.setAttribute('style', 'font-weight: 600 !important; font-size: 16px !important; color: #1e9583 !important;');
+      h3.classList.add('custom-h3-style');  // Adding the class with important styles
       position.replaceWith(h3);
-      });
-
   
   });
